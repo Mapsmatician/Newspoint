@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 header{
@@ -14,7 +16,7 @@ header{
     color: white;
 }
 
-header .logo{
+.logo{
     font-weight: bold;
     font-size: 35px;
     color: #ffa95e;
@@ -79,7 +81,7 @@ nav ul li:hover{
     font-size: 24px;;
 }
 
-.hero button{
+button{
     padding:15px 25px;
     background-color: #4e2400;
     color: #ffa95e;
@@ -127,6 +129,116 @@ nav ul li:hover{
     z-index: 3;
 }
 
+/* Footer starts here */
+
+footer{
+    background-color: #4e2400;
+    color:#fff;
+    padding:30px 35px;
+}
+.footer_top_area{
+display:flex;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+
+.footer_top_area div{
+    width:33%
+}
+
+.footer_logo_col p{ 
+
+width: 90%;
+font-size: 18px;
+line-height: 28px;
+}
+
+h5{
+    color: #ffa95e;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer_nav_col ul li{
+    list-style-type: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.footer_nav_col ul li:hover{
+   background-color: #ffa95e;
+   color: #4e2400;
+   transition: .8s;
+   cursor: pointer;
+}
+
+.footer_contact_col p{
+    margin-bottom: 20px;
+}
+
+.footer_bottom_area{
+    text-align: center;
+    margin-top:20px;
+}
+
+/* Footer ends here */
+/* 
+CTA begins here */
+
+.cta{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cta h2{
+    color: #4e2400;
+    font-size: 24px;
+}
+
+.cta input{
+    margin:20px;
+    width:400px;
+    padding:12px;
+    border-radius: 12px;
+    border: 1px solid #ffa95e;
+    outline: none;
+    font-size:16px;
+    caret-color: #ffa95e;
+}
+
+/* .cta input::placeholder{
+    color: red;;
+} */
+
+/* ads starts here */
+
+.ads{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.ads div{
+    width: 300px;
+    margin: 15px;
+    height: 350px;
+    background-color: #ffa95e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding:20px;
+
+}
+
+
 @media screen and (max-width:767px){
     
 header{
@@ -156,7 +268,7 @@ header{
         width:90%;
     }
 
-    .hero button{
+    button{
         padding: 10px 20px;
         font-size: 16px;
     }
@@ -166,4 +278,34 @@ header{
         
     }
 
+    .footer_top_area{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_top_area div{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_logo_col p{ 
+
+        width: 100%;
+        }
+
+    .footer_nav_col ul li{
+        width: 100%;
+    }
+
+    .cta h2{
+    width: 90%;
+    }
+
+.cta input{
+        width: 70%;
+    
+    }
+
+    .ads{
+        flex-direction: column;
 }
